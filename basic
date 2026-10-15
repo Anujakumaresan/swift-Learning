@@ -1,12 +1,10 @@
 
-var age: Int = 21
-var mark: Double = 89.5
-var grade: Character = "A"
-var name: String = "Anuja"
-var isPassed: Bool = true
+var name = "Anuja"
+var age = 21
 
-print(age)
-print(mark)
-print(grade)
+let college = "Karpagam Institute of Technology"
+
 print(name)
-print(isPassed)
+print(age)
+print(college)
+
