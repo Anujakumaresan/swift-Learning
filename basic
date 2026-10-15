@@ -1,0 +1,12 @@
+
+var age: Int = 21
+var mark: Double = 89.5
+var grade: Character = "A"
+var name: String = "Anuja"
+var isPassed: Bool = true
+
+print(age)
+print(mark)
+print(grade)
+print(name)
+print(isPassed)
