@@ -1,0 +1,76 @@
+//Basic Structure of SwiftUI
+
+import SwiftUI
+
+struct ContentView: View {
+
+    var body: some View {
+        Text("Hello World")
+    }
+}
+//text
+Text("Welcome to SwiftUI")
+    .font(.title)
+    .foregroundColor(.blue)
+//button
+Button("Click Me") {
+    print("Button clicked")
+}
+
+//image
+Image(systemName: "heart.fill")
+    .font(.largeTitle)
+    .foregroundColor(.red)
+
+//textfield
+@State private var name = ""
+
+var body: some View {
+    TextField("Enter your name", text: $name)
+        .textFieldStyle(.roundedBorder)
+}
+
+//VStack
+VStack {
+    Text("Hello")
+    Text("Welcome")
+    Button("Login") {
+        print("Login clicked")
+    }
+} 
+
+//HStack
+HStack {
+    Text("Name")
+    Text("Age")
+}
+
+//ZStack
+ZStack {
+    Color.yellow
+
+    Text("Hello SwiftUI")
+        .font(.largeTitle)
+}
+
+//State Management in SwiftUI
+
+import SwiftUI
+
+struct ContentView: View {
+
+    @State private var count = 0
+
+    var body: some View {
+
+        VStack {
+
+            Text("Count: \(count)")
+                .font(.largeTitle)
+
+            Button("Increase") {
+                count += 1
+            }
+        }
+    }
+}
